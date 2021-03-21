@@ -17,7 +17,7 @@ setup(
     long_description_content_type='text/markdown',  # Optional (see note above)
 
     # This should be a valid link to your project's main homepage.
-    url='https://github.com/pypa/sampleproject',  # Optional
+    url='https://github.com/cookiedan42/TPT2AI',  # Optional
 
     author='cookiedan42',  # Optional
 
