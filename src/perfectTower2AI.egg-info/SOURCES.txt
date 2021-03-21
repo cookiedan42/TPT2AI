@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/TPT2AI/Actions.py
+src/TPT2AI/BaseClass.py
+src/TPT2AI/Conditions.py
+src/TPT2AI/Double_Class.py
+src/TPT2AI/GetSet.py
+src/TPT2AI/Helpers.py
+src/TPT2AI/Impulses.py
+src/TPT2AI/Integer_Class.py
+src/TPT2AI/Script.py
+src/TPT2AI/__init__.py
+src/perfectTower2AI.egg-info/PKG-INFO
+src/perfectTower2AI.egg-info/SOURCES.txt
+src/perfectTower2AI.egg-info/dependency_links.txt
+src/perfectTower2AI.egg-info/top_level.txt
