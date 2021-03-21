@@ -6,7 +6,13 @@ Home-page: https://github.com/cookiedan42/TPT2AI
 Author: cookiedan42
 License: UNKNOWN
 Description: Lazy to click through The Perfect Tower 2's Scripting Menu?     
-        Learn Python instead!
+        Learn Python instead! 
+        
+        Add this to a colab notebook using
+        ```
+        !pip install git+https://github.com/cookiedan42/TPT2AI.git
+        ```
+        
 Keywords: sample,setuptools,development
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
