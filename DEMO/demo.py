@@ -8,8 +8,8 @@ def make_DiggerCall():
     '''
 
     diggercall = Script("diggercall")
-    diggercall.addImpulse(OpenPlace(SCREENS.MINE))
-    diggercall.addCondition(WindowOpen(SCREENS.MINE))
+    diggercall.addImpulse(OpenPlace(WINDOWS.MINE))
+    diggercall.addCondition(Wi (WINDOWS.MINE))
     diggercall.addAction(ExecuteSync("digger"))
     return diggercall.export()
 

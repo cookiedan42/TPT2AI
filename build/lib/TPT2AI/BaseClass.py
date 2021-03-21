@@ -35,6 +35,9 @@ class Interface():
 
 
 class Boolean_(Interface):  # < True False?
+    '''
+    Boolean Interface for typechecking
+    '''
     def __init__(self, value):
         self.value = value
 
@@ -44,6 +47,9 @@ class Boolean_(Interface):  # < True False?
 
 
 class Integer_(Interface):
+    '''
+    Integer Interface for typechecking
+    '''
     def __init__(self, value: int):
         if abs(value) > 999999999:
             raise ValueError("game only supports 9 digit int")
@@ -55,6 +61,9 @@ class Integer_(Interface):
 
 
 class Double_(Interface):
+    '''
+    Double Interface for typechecking
+    '''
     def __init__(self, value):
         self.value = value
 
@@ -64,6 +73,9 @@ class Double_(Interface):
 
 
 class String_(Interface):
+    '''
+    String Interface for typechecking
+    '''
     def __init__(self, text):
         if len(text) > 60:
             raise ValueError("game only supports text up to 60 char")
@@ -76,6 +88,9 @@ class String_(Interface):
 
 
 class Vector_(Interface):
+    '''
+    Vector Boolean Interface for typechecking
+    '''
     def __init__(self, x: float, y: float):
         self.x = checkType(x, float)
         self.y = checkType(y, float)
@@ -89,6 +104,9 @@ class Vector_(Interface):
 
 
 class CRAFT():
+    '''
+    Items that can be crafted in workshop
+    '''
     MOTOR = String_("motor")
     CHIP = String_("chip")
     CABLE = String_("cable.insulated")
@@ -115,6 +133,9 @@ class CRAFT():
 
 
 class MACHINES():
+    '''
+    Machines in workshop
+    '''
     OVEN = String_("oven")
     ASSEMBLY = String_("assembly")
     REFINER = String_("refiner")
@@ -126,13 +147,17 @@ class MACHINES():
     BOILER = String_("boiler")
 
 
-class SCREENS():  # TODO: verify these strings
+class WINDOWS():
+    '''
+    In game Windows/locations
+    '''
     TOWER = String_("towertesting")
-    TRADING = String_("tradingpost")
-    POWER = String_("powerplant")
+    TRADINGPOST = String_("tradingpost")
+    POWERPLANT = String_("powerplant")
     FACTORY = String_("factory")
     LAB = String_("laboratory")
     SHIPYARD = String_("shipyard")
+
     WORKSHOP = String_("workshop")
     ARCADE = String_("arcade")
     MUSEUM = String_("museum")
@@ -143,6 +168,9 @@ class SCREENS():  # TODO: verify these strings
 
 
 class MUSEUM():
+    '''
+    Locations in museum for PowerStones
+    '''
     INVENTORY = String_("inventory")
     EQUIPPED = String_("equipped")
     CUBOSCUBE = String_("cuboscube")
@@ -150,6 +178,9 @@ class MUSEUM():
 
 
 class OPERATORS():
+    '''
+    Mathematical operators
+    '''
     PLUS = String_("+")
     MINUS = String_("-")
     TIMES = String_("*")
@@ -161,6 +192,9 @@ class OPERATORS():
 
 
 class COMPARATORS():
+    '''
+    Logical Comparators
+    '''
     EQUAL = String_("==")
     NOT_EQUAL = String_("!=")
     LESS = String_("<")

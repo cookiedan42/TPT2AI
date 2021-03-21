@@ -1,27 +1,19 @@
 from .BaseClass import *
 
-
-class VecFromCoords(Vector_):
+def ExportToBytes(exportString:str)-> bytes:
     '''
-    Get a Vector from Double <X> and Double <Y>
-    '''
-    def __init__(self, x, y):
-        self.name = b'vec.fromCoords'
-        self.x = checkType(x, float, Double_)
-        self.y = checkType(y, float, Double_)
+    convert AI export to understandable bytes
+    ''' 
+    return base64.b64decode(exportString)
 
-    def asBytes(self) -> bytes:
-        return (bytes([len(self.name)])
-                + self.name
-                + self.x.asBytes()
-                + self.y.asBytes())
-
-
-class getMousePos(Vector_):
+def floatToBytes(f:float) -> bytes:
     '''
-    Get current mouse position as a Vector
+    Convert a float to byte representation of a Double
     '''
-    def __init__(self):
-        self.name = b'mouse.position'
-    def asBytes(self) -> bytes:
-        return bytes([len(self.name)]) + self.name
+    return struct.pack("d",f)
+
+def intToBytes(i):
+    '''
+    Convert an integer to 4 Byte representation
+    '''
+    return int.to_bytes(i,4,'little',signed=True)

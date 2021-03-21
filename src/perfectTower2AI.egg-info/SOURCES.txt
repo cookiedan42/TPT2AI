@@ -9,6 +9,7 @@ src/TPT2AI/Helpers.py
 src/TPT2AI/Impulses.py
 src/TPT2AI/Integer_Class.py
 src/TPT2AI/Script.py
+src/TPT2AI/Vector_Class.py
 src/TPT2AI/__init__.py
 src/perfectTower2AI.egg-info/PKG-INFO
 src/perfectTower2AI.egg-info/SOURCES.txt
